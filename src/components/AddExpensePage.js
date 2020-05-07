@@ -6,7 +6,7 @@ import ExpenseForm from './ExpenseForm';
 
 const AddExpensePage = (props) => (
   <div>
-    <h1>Add Expense</h1>
+    <h1 className='add-expense__title'>Add Expense</h1>
     <ExpenseForm
       onSubmit={(expense) => {
         props.dispatch(addExpense(expense));

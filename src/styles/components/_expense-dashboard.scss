@@ -1,3 +1,9 @@
 .expense-dashboard {
-  padding: 0 $xl-size;
+  padding: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .expense-dashboard {
+    padding: 0 $xl-size;
+  }
 }

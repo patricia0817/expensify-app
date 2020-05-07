@@ -5,8 +5,11 @@
 
 .expense-form__inputs {
   display: flex;
+  flex-wrap: wrap;
   input {
     margin-right: $m-size;
+    padding: $m-size;
+    margin-bottom: $m-size;
   }
 }
 
@@ -45,4 +48,14 @@
   margin-top: $m-size;
   transition: all 1s ease-in;
   margin-left: $l-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .expense-form__inputs {
+    flex-wrap: nowrap;
+    input {
+      padding: 0 $m-size;
+      margin-bottom: 0;
+    }
+  }
 }

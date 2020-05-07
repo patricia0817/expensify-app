@@ -1,6 +1,6 @@
 .expense-list {
-  margin: 0 $xl-size;
-  width: 80%;
+  margin: 0 $s-size;
+  // width: 100%;
 }
 
 .expense-list__title {
@@ -37,5 +37,11 @@
   justify-content: space-between;
   b {
     opacity: 0.7;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .expense-list {
+    width: 80%;
   }
 }

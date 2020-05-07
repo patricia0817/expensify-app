@@ -1,14 +1,42 @@
 .expense-dashboard-filters {
-  padding: $l-size $xl-size;
+  padding: $s-size;
   text-align: left;
   display: flex;
+
+  flex-wrap: wrap;
 }
 
 .expense-dashboard-filters * {
-  margin-right: $m-size;
+  margin-right: $s-size;
+  flex-basis: 100%;
 }
 
 .expense-dashboard-filters__input,
 .expense-dashboard-filters__select {
   border: 1px solid $light-grey;
+  padding: $m-size;
+
+  margin-bottom: $m-size;
+}
+
+.DateRangePickerInput,
+.DateRangePicker {
+  margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .expense-dashboard-filters {
+    flex-wrap: nowrap;
+  }
+  .expense-dashboard-filters * {
+    margin-right: $m-size;
+    flex-basis: auto;
+    margin-bottom: 0;
+  }
+  .expense-dashboard-filters__input,
+  .expense-dashboard-filters__select {
+    padding: 0;
+
+    margin-bottom: 0;
+  }
 }
