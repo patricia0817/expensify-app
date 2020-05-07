@@ -24,8 +24,9 @@ class ExpenseListFilters extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='expense-dashboard-filters'>
         <input
+          className='expense-dashboard-filters__input'
           type='text'
           value={this.props.filters.text}
           onChange={(e) => {
@@ -33,6 +34,7 @@ class ExpenseListFilters extends React.Component {
           }}
         />
         <select
+          className='expense-dashboard-filters__select'
           value={this.props.filters.sortBy}
           onChange={(e) => {
             if (e.target.value === 'date') {

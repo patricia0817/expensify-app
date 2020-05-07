@@ -15,6 +15,7 @@ const EditExpensePage = (props) => {
         }}
       />
       <button
+        class='edit-expense__remove'
         onClick={() => {
           props.dispatch(removeExpense({ id: props.expense.id }));
           props.history.push('/');

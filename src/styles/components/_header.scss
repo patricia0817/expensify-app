@@ -1,0 +1,21 @@
+.header {
+  text-align: center;
+  color: $dark-grey;
+}
+
+.header__title {
+  background: $dark-grey;
+  color: white;
+  padding: $l-size;
+  margin: 0;
+}
+
+.header__navigation {
+  padding: $m-size;
+}
+
+.header__navigation * {
+  text-decoration: none;
+  color: $dark-grey;
+  padding: 0 $l-size;
+}

@@ -1,0 +1,48 @@
+.expense-form {
+  padding: $l-size;
+  padding-bottom: 0;
+}
+
+.expense-form__inputs {
+  display: flex;
+  input {
+    margin-right: $m-size;
+  }
+}
+
+.expense-form__description,
+.expense-form__amount {
+  padding-left: $s-size;
+  border: 1px solid $light-grey;
+}
+
+.expense-form textarea {
+  display: block;
+  border: 1px solid $light-grey;
+  margin-top: $m-size;
+}
+
+.expense-form__button {
+  background: transparent;
+  border: 1px solid $dark-grey;
+  opacity: 0.5;
+  padding: $s-size;
+  margin-top: $m-size;
+  transition: all 1s ease-in;
+  display: inline-block;
+}
+
+.expense-form__button:hover,
+.edit-expense__remove:hover {
+  opacity: 1;
+}
+
+.edit-expense__remove {
+  background: transparent;
+  border: 1px solid $dark-grey;
+  opacity: 0.5;
+  padding: $s-size;
+  margin-top: $m-size;
+  transition: all 1s ease-in;
+  margin-left: $l-size;
+}

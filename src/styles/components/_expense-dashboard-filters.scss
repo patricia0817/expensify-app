@@ -1,0 +1,14 @@
+.expense-dashboard-filters {
+  padding: $l-size $xl-size;
+  text-align: left;
+  display: flex;
+}
+
+.expense-dashboard-filters * {
+  margin-right: $m-size;
+}
+
+.expense-dashboard-filters__input,
+.expense-dashboard-filters__select {
+  border: 1px solid $light-grey;
+}

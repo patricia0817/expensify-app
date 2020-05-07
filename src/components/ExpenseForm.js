@@ -58,35 +58,40 @@ export default class ExpenseForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='expense-form'>
         {this.state.error && <p>{this.state.error}</p>}
         <form onSubmit={this.onSubmit}>
-          <input
-            type='text'
-            placeholder='Description'
-            autoFocus
-            value={this.state.description}
-            onChange={this.onDescriptionChange}
-          />
-          <input
-            type='text'
-            placeholder='Amount'
-            value={this.state.amount}
-            onChange={this.onAmountChange}
-          />
-          <SingleDatePicker
-            date={this.state.createdAt}
-            onDateChange={this.onDateChange}
-            focused={this.state.calendarFocused}
-            onFocusChange={this.onFocusChange}
-            numberOfMonths={1}
-            isOutsideRange={() => false}
-          />
+          <div className='expense-form__inputs'>
+            <input
+              className='expense-form__description'
+              type='text'
+              placeholder='Description'
+              autoFocus
+              value={this.state.description}
+              onChange={this.onDescriptionChange}
+            />
+            <input
+              className='expense-form__amount'
+              type='text'
+              placeholder='Amount'
+              value={this.state.amount}
+              onChange={this.onAmountChange}
+            />
+            <SingleDatePicker
+              date={this.state.createdAt}
+              onDateChange={this.onDateChange}
+              focused={this.state.calendarFocused}
+              onFocusChange={this.onFocusChange}
+              numberOfMonths={1}
+              isOutsideRange={() => false}
+            />
+          </div>
+
           <textarea
             placeholder='Add a note for you expense (optional)'
             onChange={this.onNoteChange}
           ></textarea>
-          <button>Add Expense</button>
+          <button className='expense-form__button'>Add Expense</button>
         </form>
       </div>
     );
